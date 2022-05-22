@@ -836,8 +836,8 @@ void loop() {
   uint16_t tvocValue;
   uint16_t eCO2Value; // Needed?
 
-  uint8_t aqi_pm;
-  uint8_t aqi_tvoc;
+  uint8_t aqi_pm; // raw pm value
+  uint8_t aqi_tvoc; // raw co2 value ??
   
   uint32_t hueTopColor;
   uint16_t colorInterp;
@@ -931,23 +931,22 @@ void loop() {
   // Calculate the steps between the 'top' color and the base hue
   colorInterp = (hueValue / (LED_STRIP_COUNT - 1));
   #ifdef DEBUG
-  Serial.print("Color Interp: ");
-  Serial.println(colorInterp);
+  //Serial.print("Color Interp: ");
+  //Serial.println(colorInterp);
   #endif
 
   // Yellow could do with some work...?
-
   for(int i = 0; i < (aqi_tvoc+1); i++)
   {
     // Get the current color values
     uint16_t currentLEDHue = hueValue - (colorInterp * i);
     uint32_t rgbColor = ledStrip_2.gamma32(ledStrip_2.ColorHSV(currentLEDHue));
     #ifdef DEBUG
-    Serial.print("Current LED hue: ");
-    Serial.println(currentLEDHue);
+    //Serial.print("Current LED hue: ");
+   //Serial.println(currentLEDHue);
     
-    Serial.print("RGB Color: ");
-    Serial.println(rgbColor);
+    //Serial.print("RGB Color: ");
+    //Serial.println(rgbColor);
     #endif 
 
     // Write to the LEDs sequentially:
@@ -961,7 +960,11 @@ void loop() {
     // Blank the LEDs not required
     ledStrip_2.fill(0, (aqi_tvoc), (ledStrip_2.numPixels() - (aqi_tvoc)));
   }  
-
-  
+  Serial.println("PM 2.5:");
+  Serial.println(pm2_5);
+  delay(500)
+  Serial.println("PM 10:");
+  Serial.println(pm10);
+    
 
 }
