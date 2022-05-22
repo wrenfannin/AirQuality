@@ -960,11 +960,11 @@ void loop() {
     // Blank the LEDs not required
     ledStrip_2.fill(0, (aqi_tvoc), (ledStrip_2.numPixels() - (aqi_tvoc)));
   }  
-  Serial.println("PM 2.5:");
-  Serial.println(pm2_5);
-  delay(500)
-  Serial.println("PM 10:");
-  Serial.println(pm10);
+  //Serial.println("PM:");
+  //Serial.println(aqi_pm);
+  delay(500);
+  Serial.println("2.5:");
+  Serial.println(mapPM2_5);
     
 
 }
