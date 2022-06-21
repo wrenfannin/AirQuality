@@ -1,10 +1,5 @@
 # AirQuality
 
-line 808 - PM 2.5
-line 809 - PM 10
-micrograms/m^3\
-PM - index? - micrograms/m^3
-TVOC - index?
+.ino will print out values for both CO2 and PM readings to the serial monitor at a rate of 1 per 5 seconds
 
-aqi_TVOC -- Pollution Scale
-aqi_PM -- PM Scale
+.py will take these values and print them with timestamps into a text file which is appended each time the code is run
