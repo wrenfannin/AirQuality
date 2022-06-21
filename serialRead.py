@@ -5,5 +5,5 @@ ser = serial.Serial('/dev/ttyACM0',115200, timeout=10) # IMPORTANT, CHANGE ACM0 
 ser.open()
 data = ser.read()
 while True:
-    new_file = open('info_file.txt', 'w')
+    new_file = open('info_file.txt', 'a')
     new_file.write(data)
