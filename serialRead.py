@@ -7,3 +7,4 @@ data = ser.read()
 while True:
     new_file = open('info_file.txt', 'a')
     new_file.write(data)
+# Unfinished, more functionality is being added to write this data into a database
