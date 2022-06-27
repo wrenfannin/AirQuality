@@ -48,15 +48,16 @@ err_t parse_result_value(u8 *data)
 {
     if(NULL==data)
         return ERROR_PARAM;
-    for(int i=0;i<28;i++)
-    {
-        Serial.print(data[i],HEX);
-        Serial.print("  ");
-        if((0==(i)%5)||(0==i))
-        {
-            Serial.println(" ");
-        }
-    }
+    //for(int i=0;i<28;i++)
+    //{
+        //Serial.print(data[i],HEX);
+        //Serial.print("  ");
+        //if((0==(i)%5)||(0==i))
+        //{
+          
+            //Serial.println(" ");
+        //}
+    //}
     u8 sum=0;
     for(int i=0;i<28;i++)
     {
@@ -133,4 +134,3 @@ void setup(){
     //Serial.println(" ");
     delay(5000);
  }
- 
