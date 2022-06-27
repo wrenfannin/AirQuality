@@ -119,8 +119,8 @@ void setup(){
       Serial.println("Failed to get baseline readings");
       return;
     }
-    Serial.print("****Baseline values: eCO2: 0x"); Serial.print(eCO2_base, HEX);
-    Serial.print(" & TVOC: 0x"); Serial.println(TVOC_base, HEX);
+    //Serial.print("****Baseline values: eCO2: 0x"); Serial.print(eCO2_base, HEX);
+    //Serial.print(" & TVOC: 0x"); Serial.println(TVOC_base, HEX);
   }
   if(sensor.read_sensor_value(buf,29))
     {
@@ -128,9 +128,9 @@ void setup(){
     }
     parse_result_value(buf);
     parse_result(buf);
-    Serial.println(" ");
-    Serial.println(" ");
-    Serial.println(" ");
+    //Serial.println(" ");
+    //Serial.println(" ");
+    //Serial.println(" ");
     delay(5000);
  }
  
