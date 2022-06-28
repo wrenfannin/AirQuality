@@ -17,3 +17,6 @@
      - Linux: Clone this repository with:
          - Arch Based Systems: `sudo pacman -S git` and `git clone https://github.com/wrenfannin/AirQuality/`
          - Ubuntu Based Systems `sudo apt-get git` and `git clone https://github.com/wrenfannin/AirQuality/`
+ - Open the extracted folder:
+     - Windows: Use file explorer to open the folder in your Downloads
+     - Linux: Use `cd ~/AirQuality` or a GUI file manager to navigate to the folder in your home directory
