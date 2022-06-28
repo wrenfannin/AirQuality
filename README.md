@@ -1,4 +1,5 @@
-# Air Quality 
+# Air Quality Sensor
+### An Overhaul of JDF's Air Quality Sensor Project
 ## Prerequisites
  - Latest version of python
  - PySerial library - https://pyserial.readthedocs.io/en/latest/pyserial.html#installation
