@@ -12,3 +12,8 @@
 
 ## Installation 
  - Assemble the Arduino with the provided shield as in the picture below [IMAGE HERE]
+ - Clone this repository :
+     - Windows: Download this repository with the releases tab on this github page, make sure to install the .zip file from the latest release. Unpack this .zip file with the compression tool of your choice
+     - Linux: Clone this repository with:
+         - Arch Based Systems: `sudo pacman -S git` and `git clone https://github.com/wrenfannin/AirQuality/`
+         - Ubuntu Based Systems `sudo apt-get git` and `git clone https://github.com/wrenfannin/AirQuality/`
