@@ -1,3 +1,6 @@
+# Copyright (C) 2022 Wren Fannin and Arav Raja luwr5102@gmail.com 
+# Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
 import serial as ser
 import time
 import bitdotio
