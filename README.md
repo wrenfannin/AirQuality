@@ -30,6 +30,7 @@
  - Open the .ino file in the Arduino IDE:
      - Windows: Open Arduino.exe and navigate to the file tab to open the .ino file into the IDE, follow prompts on screen to make sure it is able to run
      - Linux: Open the Arduino IDE at `/bin/arduino` and navigate to the file tab to open the .ino file into the IDE, follow prompts on screen to make sure it is able to run
+ - Install the correct libraries for the code, they are available in the Arduino IDE's built in library manager
  - Select the correct serial port and the Arduino UNO board in the tools tab, the correct serial number will appear in the dropdown with the name of your Arduino next to it, it will look like either `COM9 (Arduino Uno)` or `/dev/ttyACM0 (Arduino Uno)`
  - Edit the code with either the Arduino IDE or a text editor of your choice
  - Upload the code to your Arduino with the upload button in the top left of the Arduino IDE, if this step fails, check your code or check the 'Known Issues' tab on this page for common errors
