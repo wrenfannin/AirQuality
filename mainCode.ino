@@ -102,15 +102,15 @@ void setup(){
     Serial.println("Measurement failed");
     return;
   }
-  Serial.print("TVOC "); Serial.print(sgp.TVOC); Serial.print(" ppb\r\n");
-  Serial.print("eCO2 "); Serial.print(sgp.eCO2); Serial.println(" ppm");
+  Serial.print("TVOC(ppb): "); Serial.print(sgp.TVOC); Serial.print("\r\n");
+  Serial.print("eCO2(ppm): "); Serial.print(sgp.eCO2); Serial.println("");
 
   if (! sgp.IAQmeasureRaw()) {
     Serial.println("Raw Measurement failed");
     return;
   }
-  Serial.print("Raw H2 "); Serial.print(sgp.rawH2); Serial.print("\r\n");
-  Serial.print("Raw Ethanol "); Serial.print(sgp.rawEthanol); Serial.println("");
+  Serial.print("Raw H2:"); Serial.print(sgp.rawH2); Serial.print("\r\n");
+  Serial.print("Raw Ethanol:"); Serial.print(sgp.rawEthanol); Serial.println("");
  
   delay(1000);
 
