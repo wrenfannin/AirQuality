@@ -1,4 +1,4 @@
-# Air Quality Sensor
+# Air Quality Project - [WIP]
 ### An Overhaul of JDF's Air Quality Sensor Project
 ## Prerequisites
  - Latest version of python
