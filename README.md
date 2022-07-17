@@ -1,7 +1,7 @@
 # Air Quality Project - [WIP]
 ### An Overhaul of JDF's Air Quality Sensor Project
 ## Prerequisites
- - Latest version of python
+ - Latest version of python (3.9+)
  - PySerial library - https://pyserial.readthedocs.io/en/latest/pyserial.html#installation
  - Air quality sensor kit from Dyson - https://www.jamesdysonfoundation.co.uk/resources/secondary-school-resources/engineering-solutions-air-pollution.html
  - Latest version of Python - https://www.python.org/downloads/
